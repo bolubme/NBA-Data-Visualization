@@ -28,4 +28,9 @@ A Lambda function was configured to respond to WebSocket events for sending the 
 
 Prediction data was obtained by utilizing timestamps of numerical data and score differences. Two files were created, one containing all collected data and another containing 100 points for model training. The collected data was stored in Amazon S3. A training job was created in Amazon SageMaker, followed by the creation of a model, Endpoint Configuration, and Endpoint for each team's data. Using the endpoint of each team and the 100 points removed from the training data, predictions were made and stored in DynamoDB as predicted data.
 
-<h1></h1>
+<h1>Website Screenshots</h1>
+
+
+
+
+
