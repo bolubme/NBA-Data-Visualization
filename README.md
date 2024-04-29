@@ -15,7 +15,6 @@ This project aims to predict the future scores of NBA teams based on their previ
 
 Data for the project was collected from an NBA dataset on Kaggle, focusing on the score differences of the chosen NBA teams. The data was stored in DynamoDB on AWS. Additionally, text data for sentiment analysis was collected from news headlines of the teams via news API, and the timestamped data was stored in DynamoDB.
 
-
 <h1>Sentiment Analysis</h1>
 
 A Lambda function was implemented for sentiment analysis calculation. A trigger was connected to the DynamoDB table containing the text data to automatically execute the sentiment analysis calculator whenever new data was uploaded. The results were stored in a new DynamoDB database with the sentiment scores of each headline article retrieved.
@@ -28,9 +27,12 @@ A Lambda function was configured to respond to WebSocket events for sending the 
 
 Prediction data was obtained by utilizing timestamps of numerical data and score differences. Two files were created, one containing all collected data and another containing 100 points for model training. The collected data was stored in Amazon S3. A training job was created in Amazon SageMaker, followed by the creation of a model, Endpoint Configuration, and Endpoint for each team's data. Using the endpoint of each team and the 100 points removed from the training data, predictions were made and stored in DynamoDB as predicted data.
 
+<h1>Architecture</h1>
+
+![Alt Text](./image1.png)
+![Alt Text](./image3.png)
+
 <h1>Website Screenshots</h1>
 
-
-
-
-
+![Alt Text](./image2.png)
+![Alt Text](./image4.png)
