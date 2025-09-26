@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Displaying Data</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @font-face {
+        font-family: "Rocher";
+        src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+      }
+      .main-header {
+        font-family: "Rocher";
+        color: black;
+        font-size: 40px;
+        margin-top: 30px;
+      }
+
+      .start-viewing{
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+
+      }
+
+      .start-viewing:hover{
+        color: #fab300;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logo.png" alt="logo" style="width: 40px" />
+      </a>
+    </nav>
+    <div class="container">
+      <h1 class="main-header">Welcome to NBA Team Data</h1>
+      <p class="lead">Explore future data for different NBA teams wins </p>
+      <hr class="my-4" />
+      <div class="row">
+        <div class="col-md-5">
+          <h2>About Us</h2>
+          <p>
+            Our website not only provides statistical data for different NBA teams but also displays the sentiments of the particular team selected. Additionally, you can view news text related to the selected team. You can also observe the future score difference of the chosen team. Simply navigate through the menu above to select a team and explore its data, sentiments, and news text, all conveniently presented for your analysis.
+          </p>
+          <a class="start-viewing" href="data.html" 
+            >click here to Start Viewing data</a
+          >
+        </div>
+        <div class="col-md-7">
+          <h2>Featured Teams</h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img
+                    src="./images/lakersHome.png"
+                    class="card-img-top"
+                    alt="Los Angeles Lakers"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers</h5>
+                    <p class="card-text">
+                      The Los Angeles Lakers are one of the most successful teams in
+                      NBA history, with a total of 17 NBA championships.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img
+                    src="./images/bostonHome.jpg"
+                    class="card-img-top"
+                    alt="Boston Celtics"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Boston Celtics</h5>
+                    <p class="card-text">
+                      The Boston Celtics have won a total of 17 NBA championships,
+                      tying them with the Los Angeles Lakers for the most in NBA
+                      history.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="./images/WarriorsHome.png"
+                      class="card-img-top"
+                      alt="Boston Celtics"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Golden State Warriors</h5>
+                      <p class="card-text">
+                        The Golden State Warriors, a legendary NBA team founded in 1946, boast multiple championships and a dynamic, innovative playing style, captivating fans worldwide.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 50px;" ></div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+</html>
+
+<!-- const teams = ["Boston Celtics", "Miami Heat", "Golden State Warriors", "Los Angeles Lakers", "Minnesota Timberwolves"] -->
